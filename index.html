@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumya's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Soumya</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#workexperience">Work Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Heroine Section -->
+    <section id="home" class="heroine">
+        <div class="heroine-content">
+            <h1>Hey there! I'm <span class="highlight">Soumya Tejaswi Vadlamani</span></h1>
+            <p class="typing-text">I'm a Web Developer</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary-btn">Hire Me</a>
+            </div>
+        </div>
+    </section>
+<!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>As a detail-oriented software developer, I specialize in building and optimizing scalable applications. With a strong academic background and hands-on experience in technologies like Spring Boot, React.js, AWS, and MySQL, I am committed to continuous learning and creating impactful solutions. My problem-solving skills and passion for innovation fuel my drive to deliver high-quality software that enhances user experience.</p>
+                <p>Let's make some magic together!</p>
+                <div class="resume-btn-container">
+                    <a href="resume/Soumya Tejaswi Vadlamani - Software Developer.pdf" download class="btn resume-btn">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/Soumya.jpeg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+<!-- Work Experience Section -->
+    <section id="workexperience" class="work-experience">
+        <h2>Work Experience</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-details">
+                    <h3>Liberty Mutual Insurance</h3>
+                    <h4>Software Developer</h4>
+                    <p class="duration">March 2024 - Present | Tallahassee, Florida</p>
+                    <div class="experience-overview">
+                        <p>Led full‑stack development of a Policy Management System that streamlined policy creation, renewals, and self‑service workflows—driving a 20% lift in customer satisfaction.</p>
+                    </div>
+                    <div class="experience-highlights">
+                        <h5>Key Contributions</h5>
+                    <ul class="responsibilities">
+                            <li><strong>Backend (Spring Boot):</strong> Architected services for policy creation, updates, renewal notifications, and premium calculations; integrated external data sources for seamless processing.</li>
+                            <li><strong>Database (MySQL):</strong> Redesigned schema with composite indexes and query optimizations to handle 100,000+ policies.</li>
+                            <li><strong>Frontend (React.js):</strong> Built an intuitive policy‑management UI and ran A/B tests to refine user flows.</li>
+                            <li><strong>Security:</strong> Implemented JWT-based authentication and role‑based access control to protect sensitive policy data.</li>
+                            <li><strong>Cloud & DevOps:</strong> Deployed on AWS Elastic Beanstalk with auto‑scaling for 10,000+ concurrent users; automated CI/CD pipelines to halve release times and keep downtime under one hour per month.</li>
+                    </ul>
+                </div>
+                    <div class="key-metrics">
+                        <h5>Key Metrics</h5>
+                        <ul class="metrics-list">
+                            <li>+20% Net Promoter Score (NPS) among policyholders</li>
+                            <li>30% reduction in policy lookup response time (from 200 ms to 140 ms)</li>
+                            <li>15% boost in user engagement after UI optimizations</li>
+                            <li>50% faster deployment cycles; < 1 hr monthly downtime</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-details">
+                    <h3>Bosch Global Software Technologies</h3>
+                    <h4>Associate Software Developer</h4>
+                    <p class="duration">May 2020 - July 2022 | Andhra Pradesh, India</p>
+                    <div class="experience-overview">
+                        <p>Spearheaded the end‑to‑end development of a cloud‑based Inventory Management System in Azure, streamlining stock tracking and order workflows across global teams.</p>
+                    </div>
+                    <div class="experience-highlights">
+                        <h5>Key Contributions</h5>
+                    <ul class="responsibilities">
+                            <li><strong>Backend (Spring Boot):</strong> Implemented core business logic for inventory tracking and order management, enabling seamless handling of 500+ real‑time transactions per minute.</li>
+                            <li><strong>Database (MySQL on Azure):</strong> Designed and optimized a scalable schema for 100,000+ product entries; applied indexing and query‑tuning techniques to boost data processing speed by 40%.</li>
+                            <li><strong>Frontend (React.js):</strong> Crafted intuitive admin dashboards and UI components; conducted A/B tests to refine interactions, improving user engagement by 20%.</li>
+                            <li><strong>Security:</strong> Integrated JWT authentication, role‑based access control, and data encryption to protect over 1 million inventory records in compliance with Bosch's standards.</li>
+                            <li><strong>Testing & CI/CD:</strong> Wrote comprehensive JUnit test suites and built Jenkins pipelines to automate 95% of builds and deployments, ensuring faster, reliable releases.</li>
+                            <li><strong>Cloud Deployment:</strong> Deployed the system to Azure App Services and Azure SQL Database with zero downtime; configured auto‑scaling to support 1,000+ concurrent users.</li>
+                        </ul>
+                    </div>
+                    <div class="key-metrics">
+                        <h5>Key Metrics</h5>
+                        <ul class="metrics-list">
+                            <li>+30% operational efficiency in inventory workflows</li>
+                            <li>25% reduction in inventory errors</li>
+                            <li>40% faster data processing across high‑volume transactions</li>
+                            <li>20% increase in dashboard usage and feature adoption</li>
+                            <li>15% decrease in manual data‑entry time for 200+ admin users</li>
+                            <li>40% reduction in security incidents safeguarding records</li>
+                            <li>95% pipeline automation for builds and deployments</li>
+                            <li>Zero‑downtime migration with full system availability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+<!-- Education Section -->
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-details">
+                    <h3>Master of Science in Computer Science</h3>
+                    <h4>Florida State University</h4>
+                    <p class="duration">2022 - 2024</p>
+                    <div class="education-info">
+                        <p class="gpa">GPA: 3.5/4.0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-details">
+                    <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
+                    <h4>Gandhi Institute of Technology and Management (GITAM)</h4>
+                    <p class="duration">2017 - 2021</p>
+                    <div class="education-info">
+                        <p class="gpa">GPA: 3.5/4.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-categories">
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 70%"></div>
+                            </div>
+                            <span class="percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 60%"></div>
+                            </div>
+                            <span class="percentage">60%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript/TypeScript</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 69%"></div>
+                            </div>
+                            <span class="percentage">69%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Spring Boot</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 81%"></div>
+                            </div>
+                            <span class="percentage">81%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React.js</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 75%"></div>
+                            </div>
+                            <span class="percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-node-js"></i>
+                        <h3>Node.js</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 72%"></div>
+                            </div>
+                            <span class="percentage">72%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Cloud & DevOps</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-aws"></i>
+                        <h3>AWS</h3>
+                        <p class="skill-details">EC2, S3, Lambda, RDS</p>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 75%"></div>
+                            </div>
+                            <span class="percentage">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-microsoft"></i>
+                        <h3>Azure</h3>
+                        <p class="skill-details">App Services</p>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 68%"></div>
+                            </div>
+                            <span class="percentage">68%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Web Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 87%"></div>
+                            </div>
+                            <span class="percentage">87%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-in" style="width: 79%"></div>
+                            </div>
+                            <span class="percentage">79%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Improving the Accessibility of Dating Websites</h3>
+                <p>Developed a deep learning method to classify indoor and outdoor scenes and detect the presence of cats or dogs in dating website profile images, converting these results into audio outputs to enhance accessibility for visually impaired users.</p>
+                <div class="project-links">
+                    <a href="https://github.com/SoumyaTejaswi/Improving-the-Accessibility-of-Dating-Websites-for-Individuals-with-Visual-Impairments" class="btn" target="_blank">
+                        <i class="fab fa-github"></i> View Source Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Network Emulator</h3>
+                <p>Developed a Network Emulator simulating a star-wired LAN Topology. This project demonstrates advanced networking concepts and provides a practical implementation of network communication protocols and data transmission in a local area network environment.</p>
+                <div class="project-links">
+                    <a href="https://github.com/SoumyaTejaswi/NetworkEmulator/tree/main" class="btn" target="_blank">
+                        <i class="fab fa-github"></i> View Source Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>CryptoGPT - Your Secure Chat Companion</h3>
+                <p>An innovative encryption tool that combines multiple encryption algorithms (AES, DES, Triple DES, and Blowfish) with GPT-2 integration. This project enhances message security while providing intelligent chat capabilities to address modern security challenges.</p>
+                <div class="project-links">
+                    <a href="https://github.com/SoumyaTejaswi/CryptoGPT-2499" class="btn" target="_blank">
+                        <i class="fab fa-github"></i> View Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+        <div class="social-links">
+            <a href="https://github.com/SoumyaTejaswi" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/soumya-tejaswi-vadlamani-760b871a0/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="mailto:soumya@careeremail.net" class="social-link">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            <a href="tel:+1-448-200-9264" class="social-link">
+                <i class="fas fa-phone"></i>
+                <span>Phone</span>
+            </a>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Soumya Tejaswi Vadlamani. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
