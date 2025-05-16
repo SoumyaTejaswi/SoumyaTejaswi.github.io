@@ -341,99 +341,89 @@ section h2::after {
 
 /* Skills Section */
 .skills {
-    background: var(--section-bg);
-    padding: 5rem 5%;
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .skills-categories {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .skills-category {
-    margin-bottom: 3rem;
+    margin-bottom: 40px;
 }
 
 .skills-category h3 {
-    color: var(--secondary-color);
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-weight: 600;
-    opacity: 0.9;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
 }
 
-.skill-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    border: none;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
-}
-
-.skill-card i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.skill-card h3 {
-    font-size: 1.2rem;
-    color: var(--text-color);
-    margin-bottom: 1rem;
-}
-
-.skill-details {
-    font-size: 0.9rem;
-    color: var(--light-text);
-    margin-bottom: 1rem;
-}
-
-.progress-container {
+.skill-tag {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.progress-bar {
-    background: #e5e7eb;
-    height: 8px;
-    border-radius: 4px;
-    overflow: hidden;
-    flex-grow: 1;
-    position: relative;
+.skill-tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background-color: #f0f0f0;
 }
 
-.progress-in {
-    background: var(--primary-color);
-    height: 100%;
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: width 1.5s ease-in-out;
+.skill-tag i {
+    font-size: 1.2rem;
+    color: #2196F3;
 }
 
-.percentage {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    min-width: 45px;
+.skill-tag span {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.skill-tag small {
+    font-size: 0.8rem;
+    color: #666;
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        justify-content: center;
+    }
+    
+    .skill-tag {
+        padding: 8px 16px;
+    }
+    
+    .skill-tag i {
+        font-size: 1rem;
+    }
+    
+    .skill-tag span {
+        font-size: 0.9rem;
+    }
 }
 
 /* Projects Section */
@@ -683,17 +673,16 @@ footer {
         margin-bottom: 1.5rem;
     }
 
-    .skill-card {
-        padding: 1.5rem;
+    .skill-tag {
+        padding: 8px 16px;
     }
 
-    .progress-container {
-        gap: 0.8rem;
+    .skill-tag i {
+        font-size: 1rem;
     }
-    
-    .percentage {
-        font-size: 0.8rem;
-        min-width: 40px;
+
+    .skill-tag span {
+        font-size: 0.9rem;
     }
 
     .projects-grid {
@@ -900,116 +889,3 @@ footer {
     }
 }
 
-/* Education Section */
-.education {
-    padding: 80px 20px;
-    background-color: var(--background);
-    position: relative;
-}
-
-.education-timeline {
-    max-width: 1000px;
-    margin: 40px auto;
-    position: relative;
-}
-
-.education-timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 4px;
-    background: var(--primary-color);
-}
-
-.education-item {
-    background: white;
-    padding: 25px 25px 25px 50px;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    margin-left: 30px;
-    transition: all 0.3s ease;
-    position: relative;
-    border: none;
-}
-
-.education-item::before {
-    content: '';
-    position: absolute;
-    left: -34px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: white;
-    border: 4px solid var(--primary-color);
-}
-
-.education-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-}
-
-.education-details h3 {
-    color: var(--text-color);
-    margin-bottom: 10px;
-    font-size: 1.4em;
-}
-
-.education-details h4 {
-    color: var(--primary-color);
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.duration {
-    display: inline-block;
-    padding: 4px 12px;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 15px;
-    font-size: 0.9em;
-    margin-bottom: 15px;
-}
-
-.education-info {
-    margin-top: 15px;
-}
-
-.gpa {
-    color: var(--text-color);
-    font-weight: 600;
-    margin-bottom: 10px;
-    display: inline-block;
-    padding: 4px 12px;
-    background-color: var(--section-bg);
-    border-radius: 4px;
-}
-
-.achievements {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: var(--light-text);
-}
-
-.achievements li {
-    margin-bottom: 8px;
-    line-height: 1.6;
-} 
-
-@media (max-width: 768px) {
-    .education-timeline::before {
-        left: 30px;
-    }
-    
-    .education-item {
-        margin-left: 60px;
-    }
-    
-    .education-item::before {
-        left: -64px;
-    }
-} 
