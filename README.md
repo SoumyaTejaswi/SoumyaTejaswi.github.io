@@ -6,9 +6,9 @@ Click Here to see [My PortFolio](https://soumyatejaswi.github.io/)
 
 ## Table of Contents 📋
 
-1. [Technologies Used]() \
-2. [Features]() \
-3. [Usage]() \
+1. [Technologies Used]() 
+2. [Features]() 
+3. [Usage]() 
 4. [Contact]() 
 
 ### Technologies Used ⚙️
